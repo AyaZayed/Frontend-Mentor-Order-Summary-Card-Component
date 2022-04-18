@@ -12,8 +12,35 @@
 }
 
 body {
-  font-size: 16px;
   font-family: "Red Hat Display", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: url(images/pattern-background-desktop.svg) no-repeat;
+  background-color: var(--Pale-blue);
+}
+
+.card {
+  width: 20rem;
+  text-align: center;
+  margin: 10rem;
+  background-color: white;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+.card > img {
+  width: 100%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.card .text {
+  padding: 20px;
 }
 
 .attribution {
@@ -23,4 +50,5 @@ body {
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+  text-decoration: none;
 }
