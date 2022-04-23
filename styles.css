@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 :root {
@@ -18,14 +19,15 @@ body {
   align-items: center;
   flex-direction: column;
   background: url(images/pattern-background-desktop.svg) no-repeat;
+  background-position: top;
+  background-size: contain;
   background-color: var(--Pale-blue);
-  font-weight: 500;
 }
 
 .card {
-  max-width: 23rem;
+  max-width: 25rem;
   text-align: center;
-  margin: 10rem;
+  margin: 5rem;
   background-color: white;
   border-radius: 15px;
   -webkit-border-radius: 15px;
@@ -36,9 +38,17 @@ body {
 }
 
 @media (max-width: 375px) {
+  body {
+    background: url(images/pattern-background-mobile.svg) no-repeat;
+  }
   .card {
     width: 90%;
   }
+}
+
+.card p,
+a {
+  font-size: 16px;
 }
 
 .card > img {
@@ -48,7 +58,7 @@ body {
 }
 
 .card .text {
-  padding: 35px;
+  padding: 35px 40px;
 }
 
 .card .text h2 {
@@ -58,7 +68,6 @@ body {
 
 .card .text p {
   padding: 10px;
-  font-size: 15px;
   color: var(--Desaturated-blue);
 }
 
